@@ -7,12 +7,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace api.Data
 {
-    public class ApplicationDBContext : DbContext // класс для поиска по таблицам
+    public class ApplicationDBContext :  DbContext
     {
         public ApplicationDBContext(DbContextOptions dbContextOptions)
         : base(dbContextOptions)
         {
-            
         }
 
         public DbSet<Exhibit> Exhibits { get; set; }

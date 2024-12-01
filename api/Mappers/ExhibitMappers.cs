@@ -17,17 +17,21 @@ namespace api.Mappers
                 Title = exhibitModel.Title,
                 YearOfCreation = exhibitModel.YearOfCreation,
                 Price = exhibitModel.Price,
-                Technique = exhibitModel.Technique
+                DateOfSale = exhibitModel.DateOfSale,
+                Technique = exhibitModel.Technique,
+                ArtistId = exhibitModel.ArtistId
             };
         }
-        public static Exhibit ToExhibitFromCreateDTO(this CreateExhibitRequestDto exhibitDto)
+        public static Exhibit ToExhibitFromCreate(this CreateExhibitDto exhibitDto, int artistId)
         {
             return new Exhibit
             {
                 Title = exhibitDto.Title,
                 YearOfCreation = exhibitDto.YearOfCreation,
                 Price = exhibitDto.Price,
-                Technique = exhibitDto.Technique    
+                Technique = exhibitDto.Technique, 
+                DateOfSale = exhibitDto.DateOfSale,
+                ArtistId = artistId  
             };
         }
     }

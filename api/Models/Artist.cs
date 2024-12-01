@@ -11,7 +11,7 @@ namespace api.Models
         public string FullName { get; set; } = string.Empty;
         public string SchoolOfPainting { get; set; } = string.Empty;
         public DateOnly DateOfBirth { get; set; }
-        public int? ExhibitId { get; set; } // навигация (перемещение внутри отношений)
-        public Exhibit? Exhibit { get; set; }
+
+        public List<Exhibit> Exhibits { get; set; } = new List<Exhibit>(); // навигация (перемещение внутри отношений), внешний ключ
     }
 }

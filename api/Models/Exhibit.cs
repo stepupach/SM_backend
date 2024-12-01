@@ -15,7 +15,8 @@ namespace api.Models
         [Column(TypeName ="decimal(18,2)")]
         public decimal Price { get; set; }
         public string Technique { get; set; } = string.Empty;
-
-        public List<Artist> Artists { get; set; } = new List<Artist>();
+        public DateOnly? DateOfSale { get; set; }
+        public int? ArtistId { get; set; } // навигация (перемещение внутри отношений), внешний ключ
+        public Artist? Artist { get; set; }
     }
 }

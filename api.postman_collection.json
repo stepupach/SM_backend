@@ -1,0 +1,1002 @@
+{
+	"info": {
+		"_postman_id": "745dac53-93d7-4e82-9a7f-0a37625c9cfb",
+		"name": "api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "38528672"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "artist",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "/api/artist/:id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/artist/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"artist",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/artist/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"artist",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/artist/:id",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"fullName\": \"<string>\",\n  \"schoolOfPainting\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/artist/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"artist",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"fullName\": \"<string>\",\n  \"schoolOfPainting\": \"<string>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/artist/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"artist",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/artist/:id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/artist/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"artist",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/artist/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"artist",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "with-average-price",
+							"item": [
+								{
+									"name": "/api/artist/with-average-price",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/artist/with-average-price",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"artist",
+												"with-average-price"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/artist/with-average-price",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"artist",
+														"with-average-price"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/artist",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/artist?SchoolOfPainting=<string>&FullName=<string>&SortBy=<string>&IsDescending=<boolean>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"artist"
+									],
+									"query": [
+										{
+											"key": "SchoolOfPainting",
+											"value": "<string>"
+										},
+										{
+											"key": "FullName",
+											"value": "<string>"
+										},
+										{
+											"key": "SortBy",
+											"value": "<string>"
+										},
+										{
+											"key": "IsDescending",
+											"value": "<boolean>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/artist?SchoolOfPainting=<string>&FullName=<string>&SortBy=<string>&IsDescending=<boolean>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"artist"
+											],
+											"query": [
+												{
+													"key": "SchoolOfPainting",
+													"value": "<string>"
+												},
+												{
+													"key": "FullName",
+													"value": "<string>"
+												},
+												{
+													"key": "SortBy",
+													"value": "<string>"
+												},
+												{
+													"key": "IsDescending",
+													"value": "<boolean>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						},
+						{
+							"name": "/api/artist",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"fullName\": \"<string>\",\n  \"schoolOfPainting\": \"<string>\",\n  \"id\": \"<integer>\",\n  \"dateOfBirth\": {\n    \"year\": \"<integer>\",\n    \"month\": \"<integer>\",\n    \"day\": \"<integer>\",\n    \"dayOfWeek\": 0\n  }\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/artist",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"artist"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"fullName\": \"<string>\",\n  \"schoolOfPainting\": \"<string>\",\n  \"id\": \"<integer>\",\n  \"dateOfBirth\": {\n    \"year\": \"<integer>\",\n    \"month\": \"<integer>\",\n    \"day\": \"<integer>\",\n    \"dayOfWeek\": 0\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/artist",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"artist"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "authentication",
+					"item": [
+						{
+							"name": "/api/authentication",
+							"request": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Content-Type",
+										"value": "application/json"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n  \"login\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+									"options": {
+										"raw": {
+											"headerFamily": "json",
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{baseUrl}}/api/authentication",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"authentication"
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"login\": \"<string>\",\n  \"password\": \"<string>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/authentication",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"authentication"
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				},
+				{
+					"name": "exhibit",
+					"item": [
+						{
+							"name": "{id}",
+							"item": [
+								{
+									"name": "sell-exhibit",
+									"item": [
+										{
+											"name": "/api/exhibit/:id/sell-exhibit",
+											"request": {
+												"method": "PUT",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/exhibit/:id/sell-exhibit",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"exhibit",
+														":id",
+														"sell-exhibit"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "<integer>",
+															"description": "(Required) "
+														}
+													]
+												}
+											},
+											"response": [
+												{
+													"name": "Success",
+													"originalRequest": {
+														"method": "PUT",
+														"header": [],
+														"url": {
+															"raw": "{{baseUrl}}/api/exhibit/:id/sell-exhibit",
+															"host": [
+																"{{baseUrl}}"
+															],
+															"path": [
+																"api",
+																"exhibit",
+																":id",
+																"sell-exhibit"
+															],
+															"variable": [
+																{
+																	"key": "id"
+																}
+															]
+														}
+													},
+													"status": "OK",
+													"code": 200,
+													"_postman_previewlanguage": "text",
+													"header": [],
+													"cookie": [],
+													"body": ""
+												}
+											]
+										}
+									]
+								},
+								{
+									"name": "/api/exhibit/:id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/exhibit/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"exhibit",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/exhibit/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"exhibit",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/exhibit/:id",
+									"request": {
+										"method": "PUT",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"price\": \"<double>\"\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/exhibit/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"exhibit",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "PUT",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"price\": \"<double>\"\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/exhibit/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"exhibit",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								},
+								{
+									"name": "/api/exhibit/:id",
+									"request": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/exhibit/:id",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"exhibit",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "DELETE",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/exhibit/:id",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"exhibit",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "{artistId}",
+							"item": [
+								{
+									"name": "/api/exhibit/:artistId",
+									"request": {
+										"method": "POST",
+										"header": [
+											{
+												"key": "Content-Type",
+												"value": "application/json"
+											}
+										],
+										"body": {
+											"mode": "raw",
+											"raw": "{\n  \"price\": \"<double>\",\n  \"technique\": \"<string>\",\n  \"title\": \"<string>\",\n  \"yearOfCreation\": \"<integer>\",\n  \"dateOfSale\": {\n    \"year\": \"<integer>\",\n    \"month\": \"<integer>\",\n    \"day\": \"<integer>\",\n    \"dayOfWeek\": 0\n  }\n}",
+											"options": {
+												"raw": {
+													"headerFamily": "json",
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{baseUrl}}/api/exhibit/:artistId",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"exhibit",
+												":artistId"
+											],
+											"variable": [
+												{
+													"key": "artistId",
+													"value": "<integer>",
+													"description": "(Required) "
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "POST",
+												"header": [
+													{
+														"key": "Content-Type",
+														"value": "application/json"
+													}
+												],
+												"body": {
+													"mode": "raw",
+													"raw": "{\n  \"price\": \"<double>\",\n  \"technique\": \"<string>\",\n  \"title\": \"<string>\",\n  \"yearOfCreation\": \"<integer>\",\n  \"dateOfSale\": {\n    \"year\": \"<integer>\",\n    \"month\": \"<integer>\",\n    \"day\": \"<integer>\",\n    \"dayOfWeek\": 0\n  }\n}",
+													"options": {
+														"raw": {
+															"headerFamily": "json",
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{baseUrl}}/api/exhibit/:artistId",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"exhibit",
+														":artistId"
+													],
+													"variable": [
+														{
+															"key": "artistId"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "with-school-of-painting",
+							"item": [
+								{
+									"name": "/api/exhibit/with-school-of-painting",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/exhibit/with-school-of-painting",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"exhibit",
+												"with-school-of-painting"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "Success",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{baseUrl}}/api/exhibit/with-school-of-painting",
+													"host": [
+														"{{baseUrl}}"
+													],
+													"path": [
+														"api",
+														"exhibit",
+														"with-school-of-painting"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "text",
+											"header": [],
+											"cookie": [],
+											"body": ""
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "/api/exhibit",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{baseUrl}}/api/exhibit?MinPrice=<double>&MaxPrice=<double>&SortBy=<string>&IsDescending=<boolean>&Sold=<boolean>",
+									"host": [
+										"{{baseUrl}}"
+									],
+									"path": [
+										"api",
+										"exhibit"
+									],
+									"query": [
+										{
+											"key": "MinPrice",
+											"value": "<double>"
+										},
+										{
+											"key": "MaxPrice",
+											"value": "<double>"
+										},
+										{
+											"key": "SortBy",
+											"value": "<string>"
+										},
+										{
+											"key": "IsDescending",
+											"value": "<boolean>"
+										},
+										{
+											"key": "Sold",
+											"value": "<boolean>"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "Success",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{baseUrl}}/api/exhibit?MinPrice=<double>&MaxPrice=<double>&SortBy=<string>&IsDescending=<boolean>&Sold=<boolean>",
+											"host": [
+												"{{baseUrl}}"
+											],
+											"path": [
+												"api",
+												"exhibit"
+											],
+											"query": [
+												{
+													"key": "MinPrice",
+													"value": "<double>"
+												},
+												{
+													"key": "MaxPrice",
+													"value": "<double>"
+												},
+												{
+													"key": "SortBy",
+													"value": "<string>"
+												},
+												{
+													"key": "IsDescending",
+													"value": "<boolean>"
+												},
+												{
+													"key": "Sold",
+													"value": "<boolean>"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "text",
+									"header": [],
+									"cookie": [],
+									"body": ""
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "baseUrl",
+			"value": "/"
+		}
+	]
+}
